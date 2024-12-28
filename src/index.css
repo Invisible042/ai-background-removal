@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html{
+    width:100vw
+}
+body{
+    width:100%;
+    background-color:rgb(220, 220, 249)
+}
+#root{
+    width:100%;
+}
+
+.slider{
+    -webkit-appearance:none;
+    background:transparent;
+    background-repeat:no-repeat;
+}
+
+.slider::-moz-range-thumb{
+    -webkit-appearance:none;
+    appearance:none;
+    background-image:url("./src/assets/slide_icon.svg");  
+    background-size:cover;
+    width:30px;
+    background-size:cover;
+    background-position:center;
+}
