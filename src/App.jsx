@@ -10,13 +10,15 @@ import {Link} from "react-router-dom"
 const App = () => {
   return (
     <div className=" w-full h-screen">
+      <Router basename="/ai-background-removal">
         <Navbar/>
         <Routes>
-          <Route path="/home" element={<Home/>} />
-          <Route path="/buycredit" element={<Buycredit/>} />
-          <Route path="/result" element={<Result/>} />
+          <Route path="/ai-background-removal/" element={<Home/>} />
+          <Route path="/ai-background-removal/buycredit" element={<Buycredit/>} />
+          <Route path="/ai-background-removal/result" element={<Result/>} />
         </Routes>
         <Footer/>
+        </Router>
     </div>
   )
 }
